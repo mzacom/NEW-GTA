@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../style";
 import { robot, logo } from "../assets";
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,16 +23,28 @@ const Navbar = () => {
         </p>
       </div>
 
-      <ul className=" sm:flex md:flex md:mr-[250px] md:gap-[60px] text-black dark:text-white sm:text-[small] sm:ml-[72px]  hidden mr-10 gap-6 list-none">
+      <ul className=" sm:flex md:flex md:mr-[150px] md:gap-[70px] text-black dark:text-white sm:text-[small] sm:ml-[72px]  hidden mr-10 gap-6 list-none">
         {navLinks.map((nav, index) => (
           <li key={nav.id} className=" list">
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
 
-        <button className="login rounded-full text-white mt-[-5px] md:mr-[-200px] sm:ml-[0px] sm:w-[80px] font-semibold text-[medium] sm:text-[small]">
-          Login
-        </button>
+        <div className="md:mr-[-100px] sm:ml-[0px] mt-[-5px] flex justify-center items-center gap-6">
+          <Link
+            to={"login"}
+            className="login flex items-center justify-center rounded-full text-white  sm:w-[80px] font-semibold text-[medium] sm:text-[small]"
+          >
+            Login
+          </Link>
+
+          <Link
+            to={"register"}
+            className=" border-[1.9px] border-black p-1 flex items-center justify-center rounded-full dark:text-white  sm:w-[80px] font-semibold text-[medium] sm:text-[small]"
+          >
+            Sign Up
+          </Link>
+        </div>
       </ul>
 
       <button className=" mt-[-7px]  font-semibold text-3xl  sm:hidden md:hidden">
@@ -46,7 +59,7 @@ const Navbar = () => {
       <div
         className={`${
           !toggle ? "hidden" : "flex"
-        } p-6  absolute top-20 z-[100] right-0 mx-4 my-2  min-w-[140px] rounded-xl bg-slate-200  dark:bg-slate-800  blury sidebar`}
+        } p-6  absolute top-20 z-[100] right-0 mx-4 my-2  min-w-[140px] rounded-xl bg-slate-200  dark:bg-slate-800 sm:hidden  blury sidebar`}
       >
         <ul className=" text-black dark:text-white flex flex-col gap-5 w-[130px]  items-center text-[large] list-none">
           {navLinks.map((nav, index) => (
@@ -54,6 +67,13 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+          <Link
+            to={"register"}
+            className=" text-[17px] w-full sign2 p-1 rounded-lg flex justify-center items-center gap-2 "
+          >
+            Sign In <i class="fa-solid fa-right-to-bracket"></i>
+          </Link>
         </ul>
       </div>
     </nav>
