@@ -14,7 +14,7 @@ const School = () => {
       >
         <section
           id="school"
-          className={`${styles.boxWidth} ${styles.paddingY} ${styles.padding} bg-white dark:bg-primary font-poppins text-black dark:text-white mt-[-120px] md:mt-0`}
+          className={`${styles.boxWidth} ${styles.paddingY} ${styles.padding} bg-white dark:bg-primary font-poppins text-black dark:text-white mt-[-50px] md:mt-0`}
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -23,7 +23,7 @@ const School = () => {
             className={`md:mb-0 mb-5`}
           >
             <h1 className="text-center text-[25px] mt-[40px]  sm:text-[30px] md:text-[35px] font-semibold">
-              School
+              Academy 
             </h1>
 
             <div className="  md:p-1 justify-center flex items-center ">
