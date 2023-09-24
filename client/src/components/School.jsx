@@ -23,16 +23,16 @@ const School = () => {
             className={`md:mb-0 mb-5`}
           >
             <h1 className="text-center text-[25px] mt-[40px]  sm:text-[30px] md:text-[35px] font-semibold">
-              Academy 
+              Academy
             </h1>
 
             <div className="  md:p-1 justify-center flex items-center ">
               <h6 className=" mt-3 text-center  text-slate-500">
-                Unlock the world of forex trading with our Forex School at
-                Gabriel Trading Academy. Delve into a comprehensive curriculum,
-                master trading strategies, and engage with a community of
-                like-minded learners. Elevate your trading game with us and turn
-                your passion into profit.
+                Welcome to our Forex Academy, where we invite you to embark on
+                a journey of discovery. Navigate through the intricacies of
+                Forex trading and initiate your path to informed
+                decision-making. Let's dive in and unlock the potential of the
+                foreign exchange market together.
               </h6>
             </div>
 
