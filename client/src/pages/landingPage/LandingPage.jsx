@@ -27,7 +27,7 @@ const LandingPage = () => {
           class={` fixed top-[90%] text-3xl text-blue-600 right-6  fa-solid ${
             showMessage ? "fa-xmark" : "fa-comment-dots"} `}
         ></i>
-        <i class="fa-solid  fa-xmark"></i>
+     
       </div>
 
       {/* Social media */}
