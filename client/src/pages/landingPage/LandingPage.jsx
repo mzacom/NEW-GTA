@@ -33,12 +33,12 @@ const LandingPage = () => {
 
       {/* Social media */}
       <section
-        className={`top-[89%] blury  fixed  right-[70px] flex rounded-lg flex-row gap-[50px] p-6 ${
+        className={`top-[89%] shadow-lg dark:shadow-slate-900 blury  fixed  right-[70px] flex rounded-lg flex-row gap-[50px] p-6 ${
           showMessage ? "flex" : "hidden"
         } `}
       >
         <i class="fa-brands fa-twitter fa-2xl text-[#347af4] "></i>
-        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <i class="fa-brands fa-instagram dark:text-white fa-2xl"></i>
         <i class="fa-brands fa-whatsapp fa-2xl text-[#19f027]"></i>
       </section>
     </>

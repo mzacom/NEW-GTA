@@ -51,9 +51,9 @@ const CurrentMarket = () => {
   return (
   
   
-  <motion.div initial={{ opacity: 0  }} whileInView={{ opacity: 1}} transition={{ duration: 0.3 }} className={`md:mb-0 mb-5`}>
+  <div className={`md:mb-0 mb-5`}>
   <section id='features' className={`${styles.boxWidth} ${styles.paddingY} ${styles.padding} bg-white dark:bg-primary font-poppins text-black dark:text-white mt-[-120px] md:mt-0`} >
-  <motion.div initial={{ opacity: 0  }} whileInView={{ opacity: 1}} transition={{ duration: 0.6 }} className={`md:mb-0 mb-5`}>
+  <div className={`md:mb-0 mb-5`}>
     <h1 className='text-center text-[25px] mt-[40px]  sm:text-[30px] md:text-[35px] font-semibold'>
       Current <span className=' text-blue-600'>Market</span>
     </h1>
@@ -95,14 +95,14 @@ const CurrentMarket = () => {
     </div>
   
     </div>
-    </motion.div>
+    </div>
     
     
    
 
 
   </section>
-  </motion.div>
+  </div>
   
   
   )
