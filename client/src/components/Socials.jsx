@@ -8,7 +8,7 @@ const Socials = () => {
       {/* Contact btn */}
       <div  onClick={() => showCancle(!showMessage)}>
         <i
-          class={` blury py-2 rounded-full shadow-lg flex items-center justify-center px-3 fixed top-[90%] text-3xl text-blue-600 right-6  fa-solid ${
+          class={` blury py-2 rounded-full shadow-lg flex items-center justify-center ${showMessage ? "px-4":"px-3"} fixed top-[90%] text-3xl text-blue-600 right-6  fa-solid ${
             showMessage ? "fa-xmark " : "fa-comment-dots"} `}
         ></i>
      
