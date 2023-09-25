@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../style";
 import { Link } from "react-router-dom";
 
+
 const InitSchool = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const InitSchool = () => {
         <Link className=" flex items-center " to={"/"}>
           <i class="fa-solid  fa-chevron-left"></i> Back{" "}
         </Link>
-        <div className=" flex justify-center items-center text-center ">
+        <div className=" flex justify-center mr-5 items-center text-center ">
           Academy
         </div>
         <i class="fa-solid fa-user"></i>
