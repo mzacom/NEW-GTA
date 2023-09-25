@@ -20,7 +20,7 @@ const InitSchool = () => {
         id="home"
       >
         {/* school */}
-        <section className=" px-2 w-[88%] flex justify-center items-center h-[145px] md:flex md:flex-col md:justify-center leading-tight md:h-[120px] mx-auto rounded-lg  bg-blue-600  shadow-lg">
+        <section className=" px-2 w-[88%] flex  py-2 md:flex md:flex-col  mx-auto rounded-lg  bg-blue-600  shadow-lg">
           <h1 className=" text-white md:flex md:flex-col  pt-2 md:text-3xl pl-4 text-xl ">
             School
             <p className=" text-[small]  ">
@@ -32,7 +32,7 @@ const InitSchool = () => {
 
         {/* Brokers and timetable */}
         <section className=" mx-auto w-[88%] gap-5  flex flex-col md:flex-row">
-          <div className="md:w-[40%] h-[140px]  px-1 flex justify-center items-center md:h-[120px] bg-slate-400 rounded-lg shadow-lg ">
+          <div className="md:w-[40%] py-2  px-1 flex justify-center items-center bg-slate-400 rounded-lg shadow-lg ">
             <h1 className=" text-white pt-2 pl-4 text-xl md:text-left text-[15px] md:text-3xl ">
               Time-table
               <p className=" text-[small] px-2   ">
@@ -41,7 +41,7 @@ const InitSchool = () => {
               </p>
             </h1>
           </div>
-          <div className=" md:w-[60%]  px-1 flex justify-center items-center h-[160px] bg-pink-400  md:h-[120px] rounded-lg shadow-lg ">
+          <div className=" md:w-[60%]  px-1 flex justify-center items-center  bg-pink-400  py-2 rounded-lg shadow-lg ">
             <h1 className=" text-white pt-2 pl-4 text-[15px] text-xl md:text-3xl ">
               Brokers.
               <p className=" text-[small] px-1  ">
@@ -54,17 +54,18 @@ const InitSchool = () => {
 
         {/* Market Time and Quiz */}
         <section className=" mx-auto w-[88%] gap-5  flex flex-col md:flex-row">
-          <div className="md:w-[60%] h-[140px] md:h-[120px] md:justify-center flex justify-center items-center md:flex md:flex-col bg-slate-700 rounded-lg shadow-lg ">
+        
+          <div className="md:w-[60%]  py-2 md:h-[120px] flex  items-center bg-slate-700 rounded-lg shadow-lg ">
             <h1 className=" text-white pt-2 pl-4 text-[15px] text-xl md:text-3xl ">
-              Market Time
+            Market Time
               <p className=" text-[small] px-1   ">
-                Explore the moments that shape currency trading and seize your
+              Explore the moments that shape currency trading and seize your
                 chance for profitable endeavors.
               </p>
             </h1>
           </div>
 
-          <div className="md:w-[40%] h-[155px] md:h-[120px] flex justify-center items-center  bg-orange-400 rounded-lg shadow-lg ">
+          <div className="md:w-[40%]  py-2 md:h-[120px] flex justify-center items-center  bg-orange-400 rounded-lg shadow-lg ">
             <h1 className=" text-white pt-2 pl-4 text-[15px] text-xl md:text-3xl ">
               Quiz
               <p className=" text-[small] px-1   ">
@@ -76,7 +77,7 @@ const InitSchool = () => {
         </section>
 
         {/* Videos */}
-        <section className=" w-[88%] flex justify-center items-center h-[220px] px-1 mx-auto rounded-lg md:h-[120px] bg-slate-400  shadow-lg">
+        <section className=" w-[88%] flex justify-center items-center  py-2 px-1 mx-auto rounded-lg  bg-slate-400  shadow-lg">
           <h1 className=" text-white pt-2 pl-4 text-xl md:text-3xl ">
             Videos
             <p className=" text-[small] px-1   ">
@@ -89,8 +90,13 @@ const InitSchool = () => {
         </section>
 
         {/* Community */}
-        <section className=" w-[88%] h-[100px] mx-auto rounded-lg  bg-blue-600  shadow-lg">
-          <h1 className=" text-white pt-2 pl-4 text-xl ">Community</h1>
+        <section className=" w-[88%] py-2 mx-auto rounded-lg  bg-blue-600  shadow-lg">
+          <h1 className=" text-white pt-2 pl-4 text-xl ">Community
+          <p className=" text-[small] px-1   ">
+          Join us as we connect, share experiences, and support one another on this collective journey. Let’s come together and foster a thriving, collaborative community.
+          </p>
+          </h1>
+          
         </section>
       </section>
     </>
