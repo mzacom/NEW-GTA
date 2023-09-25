@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const InitSchool = () => {
   return (
     <>
-      <div className=" w-full h-[50px] fixed top-0 text-2xl gap-6 md:gap-[90px] flex items-center justify-around  text-center   font-semibold  mb-4 dark:text-white blury   ">
+      <div className=" w-full md:h-[70px] h-[50px] fixed top-0 text-2xl gap-6 md:gap-[90px] flex items-center justify-around  text-center   font-semibold  mb-4 dark:text-white blury   ">
         {" "}
         <Link className=" flex items-center " to={"/"}>
           <i class="fa-solid  fa-chevron-left"></i> Back{" "}
@@ -20,7 +20,7 @@ const InitSchool = () => {
         id="home"
       >
         {/* school */}
-        <section className=" px-2 w-[88%] flex  py-2 md:flex md:flex-col  mx-auto rounded-lg  bg-blue-600  shadow-lg">
+        <section className=" md:mt-6 px-2 w-[88%] flex  py-2 md:flex md:flex-col  mx-auto rounded-lg  bg-blue-600  shadow-lg">
           <h1 className=" text-white md:flex md:flex-col  pt-2 md:text-3xl pl-4 text-xl ">
             School
             <p className=" text-[small]  ">
