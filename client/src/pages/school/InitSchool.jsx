@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../style";
 import { Link } from "react-router-dom";
+import Socials from "../../components/Socials";
 
 
 const InitSchool = () => {
@@ -100,6 +101,7 @@ const InitSchool = () => {
           
         </section>
       </section>
+      <Socials/>
     </>
   );
 };

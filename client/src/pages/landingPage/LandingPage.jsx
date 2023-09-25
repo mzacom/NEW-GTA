@@ -1,9 +1,10 @@
 import { Navbar, Hero, CurrentMarket, School } from "../../components";
 import styles from "../../style";
-import { useState } from "react";
+import Socials from "../../components/Socials";
+
 
 const LandingPage = () => {
-  const [showMessage, showCancle] = useState(false);
+ 
   return (
     <>
    
@@ -20,27 +21,11 @@ const LandingPage = () => {
         <Hero />
         <CurrentMarket />
         <School />
+        <Socials/>
+        
       </div>
 
-      {/* Contact btn */}
-      <div onClick={() => showCancle(!showMessage)}>
-        <i
-          class={` fixed top-[90%] text-3xl text-blue-600 right-6  fa-solid ${
-            showMessage ? "fa-xmark" : "fa-comment-dots"} `}
-        ></i>
-     
-      </div>
-
-      {/* Social media */}
-      <section
-        className={`top-[89%] shadow-lg dark:shadow-slate-900 blury  fixed  right-[70px] flex rounded-lg flex-row gap-[50px] p-6 ${
-          showMessage ? "flex" : "hidden"
-        } `}
-      >
-        <i class="fa-brands fa-twitter fa-2xl text-[#347af4] "></i>
-        <i class="fa-brands fa-instagram dark:text-white fa-2xl"></i>
-        <i class="fa-brands fa-whatsapp fa-2xl text-[#19f027]"></i>
-      </section>
+    
     </>
   );
 };
