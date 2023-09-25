@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 const InitSchool = () => {
   return (
     <>
-      <div className=" w-full h-[50px] fixed top-0 text-2xl flex items-center  justify-start text-center   font-semibold  mb-4 dark:text-white blury  bg-slate-50 dark:bg-slate-900 ">
+      <div className=" w-full h-[50px] fixed top-0 text-2xl gap-6 md:gap-[90px] flex items-center justify-around  text-center   font-semibold  mb-4 dark:text-white blury   ">
         {" "}
-        <Link to={"/"}>
-          <i class="fa-solid ml-4 fa-chevron-left"></i> Back{" "}
+        <Link className=" flex items-center " to={"/"}>
+          <i class="fa-solid  fa-chevron-left"></i> Back{" "}
         </Link>
-        <span className="ml-[20%]">Academy</span>
+        <div className=" flex justify-center items-center text-center ">Academy</div>
+        <i class="fa-solid fa-user"></i>
       </div>
       <section
         className={`${styles.boxWidth}  gap-4  mb-5 mt-[70px] flex  flex-col  md:flex-col  font-poppins text-black dark:text-white`}
