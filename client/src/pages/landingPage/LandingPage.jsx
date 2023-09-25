@@ -5,18 +5,11 @@ import { useState,useEffect  } from "react";
 const LandingPage = () => {
   const [showMessage, showCancle] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY;
-
-      // Set a threshold for when the element should disappear (e.g., scrolled > 100)
-      if (scrolled > 10) {
-        setIsVisible(false);
-        showCancle(false)
-      } else {
-        setIsVisible(true);
-      }
+      // Set the element to be invisible whenever the user scrolls
+      setIsVisible(false);
+      showCancle(false)
     };
 
     window.addEventListener('scroll', handleScroll);
