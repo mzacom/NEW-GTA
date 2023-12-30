@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LandingPage, Login, Register , InitSchool} from "./pages/pages";
-
-
+import LandingPage from "./pages/landingPage/LandingPage";
+import SignIn from "./pages/login/SignIn";
+import SignUp from "./pages/signUp/SignUp";
 
 const App = () => {
   return (
@@ -10,9 +10,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="school" element={<InitSchool/>}/>
+          <Route path="signIn" element={<SignIn />} />
+          <Route path="signUp" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </>

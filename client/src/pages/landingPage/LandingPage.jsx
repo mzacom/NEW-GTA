@@ -6,7 +6,7 @@ import Socials from "../../components/Socials";
 const LandingPage = () => {
  
   return (
-    <>
+    <> 
    
       {/* Nav-bar */}
       <div className=" left-0 right-0 top-0 fixed w-full z-[100] bg-none blury h-[50px] sm:h-[70px] md:h-[70px] ">
