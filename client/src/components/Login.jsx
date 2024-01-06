@@ -1,15 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { navLinks } from "../constants";
 
 const Login = () => {
   return (
-   <div className=' flex gap-6 sm:w-[160%] '>
+    <div className=" flex gap-6 sm:w-[160%] ">
+      <Link to={"signIn"} className="h-11 text-center p-2 w-[40%] rounded-full sign2">
+        Login
+      </Link>
 
-<button className='h-11 p-2 w-[40%] rounded-full sign2'>Login</button>
+      <Link
+        to={"signUp"}
+        className="h-11 text-center p-2 w-[40%] rounded-full sign"
+      >
+        Sign Up
+      </Link>
+    </div>
+  );
+};
 
-    <button className='h-11 p-2 w-[40%] rounded-full sign'>Sign Up</button>
-
-   </div>
-  )
-}
-
-export default Login
+export default Login;
