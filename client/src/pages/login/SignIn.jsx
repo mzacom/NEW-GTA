@@ -12,7 +12,7 @@ const SignIn = () => {
 
   return (
     <>
-      <section className="  flex-col justify-center  text-center fixed mx-auto w-full flex  items-center  ">
+      <section className=" dark:text-white flex-col justify-center  text-center fixed mx-auto w-full flex  items-center  ">
         {/* introduction section */}
         <section className="  ss:w-[80%] w-full flex-col  flex px-[20px] ">
           {/* Logo and language */}
@@ -58,7 +58,7 @@ const SignIn = () => {
                 })
               }
               placeholder="Username"
-              className=" bg-white border-[1px] outline-none border-slate-700 rounded-lg p-2 w-full "
+              className=" dark:bg-black dark:border-white  bg-white border-[1px] outline-none border-slate-700 rounded-lg p-2 w-full "
             />
           </div>
 
@@ -76,7 +76,7 @@ const SignIn = () => {
                 })
               }
               placeholder="Password"
-              className=" outline-none border-[1px] border-slate-700 rounded-lg p-2 w-full "
+              className=" dark:bg-black dark:border-white  outline-none border-[1px] border-slate-700 rounded-lg p-2 w-full "
             />
 
             <i
