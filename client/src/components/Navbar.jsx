@@ -19,7 +19,7 @@ const Navbar = () => {
         className={` ${
           toggle ? " block " : " hidden "
         } fixed opacity- sm:hidden w-full h-[900px] mt-[4rem] opacity-0 bg-white z-[300] `}
-        onClick={() => setToggle((prev) => !prev)}
+        onPointerEnter={() => setToggle((prev) => !prev)}
       ></div>
       <nav
         className={`${styles.paddingX} z-[1000]  sm:px-[1.7rem] sm:py-[0.5rem] ${styles.boxWidth} font-poppins  justify-between items-center flex flex-row`}
