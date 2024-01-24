@@ -38,7 +38,7 @@ const School = () => {
 
             <Link
               to={"school"}
-              className=" h-11 p-2 w-[40%] sm:w-[30%] rounded-full sign2 flex justify-center items-center mx-auto mt-[2rem] text-white "
+              className=" h-11 p-2 w-[40%] sm:w-[30%] bg-blue-700 rounded-full sign2 flex justify-center items-center mx-auto mt-[2rem] text-white "
             >
               Get Started
             </Link>
