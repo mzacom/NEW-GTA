@@ -5,7 +5,7 @@ const Login = () => {
   return (
 
   
-    <div className=" flex gap-6 sm:w-[160%] ">
+    <div className=" flex gap-6 sm:hidden ">
       <Link to={"signIn"} className=" z-[99] h-11 bg-blue-700 text-center p-2 w-[40%] rounded-full sign2">
         Login
       </Link>

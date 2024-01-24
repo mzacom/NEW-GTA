@@ -46,14 +46,14 @@ const Navbar = () => {
           <div className="md:mr-[-100px] sm:ml-[0px] mt-[-5px] flex justify-center items-center gap-6">
             <Link
               to={"signIn"}
-              className="login flex items-center justify-center rounded-full text-white  sm:w-[80px] font-semibold text-[medium] sm:text-[small]"
+              className="login bg-blue-600 hover:font-bold flex items-center justify-center rounded-full text-white  sm:w-[80px]  text-[medium] sm:text-[small]"
             >
               Login
             </Link>
 
             <Link
               to={"signUp"}
-              className=" border-[1.9px] border-black p-1 flex items-center justify-center rounded-full dark:text-white  sm:w-[80px] font-semibold text-[medium] sm:text-[small]"
+              className=" border-[1.9px] dark:border-white border-black p-1 flex items-center justify-center rounded-full dark:text-white  sm:w-[80px] hover:border-[2px] hover:font-bold text-[medium] sm:text-[small]"
             >
               Sign Up
             </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <Link
               to={"signIn"}
-              className=" text-[17px] w-full sign2 p-1 rounded-lg flex justify-center items-center gap-2 "
+              className=" bg-blue-600  text-[17px] w-full sign2 p-1 rounded-lg flex justify-center items-center gap-2 "
             >
               Sign In <i class="fa-solid fa-right-to-bracket"></i>
             </Link>
