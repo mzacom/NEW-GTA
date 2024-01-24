@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { robot } from '../assets'
 import Login from './Login'
 
+
 const Hero = () => {
   return (
    <>
@@ -47,9 +48,7 @@ const Hero = () => {
 
   </section>
   
-  <div className='hidden md:block mt-[-50px] sm:mt-[-220px] md:mt-[-260px] items-center justify-center w-[100%] sm:w-[30%] md:w-[20%] ml-[5%] sm:ml-[30%] md:ml-0'>
-  <Login/>
-  </div>
+
 
    
    

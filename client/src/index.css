@@ -177,23 +177,15 @@
   -webkit-backdrop-filter: blur(15px);
 }
 
-.sign {
-  border: solid rgb(130, 125, 125) 2px;
-}
 
-.sign:hover {
-  background: rgb(130, 125, 125) 2px;
-  color: white;
-  border: none;
-}
+
+
 .sign2 {
-  background: rgba(0, 60, 255, 0.837);
+  background: blue;
   color: white;
 }
 
-.sign2:hover {
-  background: blue;
-}
+
 
 .roundedd {
   border-radius: 10px 10px 0px 0px;
