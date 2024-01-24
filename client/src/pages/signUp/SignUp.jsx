@@ -119,7 +119,7 @@ const SignUp = () => {
   };
 
   return (
-    <section className="  flex-col justify-center  text-center  mx-auto w-full flex  items-center  ">
+    <section className=" dark:text-white flex-col justify-center  text-center  mx-auto w-full flex  items-center  ">
       {/* introduction section */}
       <section className="  ss:w-[80%] w-full flex-col  flex px-[20px] ">
         {/* Logo and language */}
@@ -162,7 +162,7 @@ const SignUp = () => {
             onChange={handleChange}
             onBlur={handleBlur}
             placeholder="e.g: John"
-            className={`bg-white border-[1px] ${
+            className={`bg-white dark:bg-black dark:border-white  border-[1px] ${
               showEmptyMessage ? " border-red-600 " : "border-slate-700 "
             }  rounded-lg p-2 w-full`}
           />
@@ -184,7 +184,7 @@ const SignUp = () => {
             onChange={handleChange2}
             onBlur={handleBlur2}
             placeholder="e.g: Huckels"
-            className={`bg-white border-[1px] ${
+            className={`bg-white border-[1px] dark:bg-black dark:border-white  ${
               showEmptyMessage2 ? " border-red-600 " : "border-slate-700 "
             }  rounded-lg p-2 w-full`}
           />
@@ -197,13 +197,13 @@ const SignUp = () => {
 
         {/* Country */}
         <label
-          className="text-slate-600 mb-[-9px] text-left"
+          className="text-slate-600  mb-[-9px] text-left"
           htmlFor="countries"
         >
           Countries
         </label>
         <select
-          className={`bg-white border-[1px] outline-none border-slate-700 rounded-lg p-2 w-full`}
+          className={`bg-white border-[1px] dark:bg-black dark:border-white  outline-none border-slate-700 rounded-lg p-2 w-full`}
           name="countries"
           id="countries"
         >
@@ -216,11 +216,11 @@ const SignUp = () => {
 
         {/* phone number  */}
         <div>
-          <p className=" text-slate-600 mb-1 text-left">Phone number: </p>
+          <p className="  text-slate-600 mb-1 text-left">Phone number: </p>
 
           <PhoneInput
             value={phone}
-            className={` bg-white border-[1px] border-slate-700 rounded-lg  w-full`}
+            className={` dark:bg-black dark:border-white  bg-white border-[1px] border-slate-700 rounded-lg  w-full`}
           />
         </div>
 
@@ -235,7 +235,7 @@ const SignUp = () => {
               placeholder="Password"
               value={password}
               onChange={handlePasswordChange}
-              className={`bg-white border-[1px] border-slate-700 "
+              className={` dark:bg-black dark:border-white bg-white border-[1px] border-slate-700 "
               } rounded-lg p-2 w-full outline-none `}
             />{" "}
             <i
@@ -264,7 +264,7 @@ const SignUp = () => {
               placeholder="Confirm password"
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
-              className={`bg-white border-[1px] ${
+              className={` dark:bg-black dark:border-white bg-white border-[1px] ${
                 showEmptyMessage2 ? " border-red-600 " : "border-slate-700 "
               } rounded-lg p-2 w-full outline-none `}
             />
@@ -301,7 +301,7 @@ const SignUp = () => {
           type="submit"
           disabled={!isChecked}
           className={`${
-            !isChecked ? " bg-slate-400 " : "bg-[blue] "
+            !isChecked ? " bg-slate-400 " : " bg-blue-700 "
           }  p-[10px] lx:mt-[20px] rounded-[10px] text-white `}
         >
           {" "}
@@ -313,7 +313,7 @@ const SignUp = () => {
       <br />
       <div className="text-left text-[15px] ">
         Already a member?{" "}
-        <Link to={"/signUp"} className=" text-[blue] ">
+        <Link to={"/signUp"} className=" text-blue-600 ">
           {" "}
           Sign In{" "}
         </Link>
