@@ -12,7 +12,7 @@ const Login = () => {
 
       <Link
         to={"signUp"}
-        className="h-11 text-center border-black border-[2px] dark:border-white  z-[99] p-2 w-[40%] rounded-full sign"
+        className="h-11 text-center border-black border-[1px] dark:border-white  z-[99] p-2 w-[40%] rounded-full sign"
       >
         Sign Up
       </Link>
