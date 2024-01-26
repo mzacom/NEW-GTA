@@ -9,7 +9,7 @@ import Login from './Login'
 const Hero = () => {
   return (
    <>
-  <section className={`${styles.boxWidth} overflow-x-hidden flex  flex-col  md:flex-row ml-[10px]  bg-white dark:bg-primary font-poppins text-black dark:text-white`} id='home'>
+  <section className={`${styles.boxWidth} overflow-x-hidden flex  flex-col  md:flex-row ml-[10px]  bg-white dark:bg-black font-poppins text-black dark:text-white`} id='home'>
 
 
 

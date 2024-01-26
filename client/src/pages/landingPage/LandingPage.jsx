@@ -15,7 +15,7 @@ const LandingPage = () => {
 
       {/* Sections */}
       <div
-        className={`${styles.flexStart} ${styles.paddingX} left-0 right-0  flex flex-col  sm:pt-[5rem] md:pt[10rem] pt-[4rem] bg-white dark:bg-primary font-poppins text-black dark:text-white`}
+        className={`${styles.flexStart} ${styles.paddingX} left-0 right-0  flex flex-col  sm:pt-[5rem] md:pt[10rem] pt-[4rem] bg-white dark:bg-black  font-poppins text-black dark:text-white`}
       >
         {/* Hero section */}
         <Hero />

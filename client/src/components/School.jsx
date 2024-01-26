@@ -14,7 +14,7 @@ const School = () => {
       >
         <section
           id="school"
-          className={`${styles.boxWidth} ${styles.paddingY} ${styles.padding} bg-white dark:bg-primary font-poppins text-black dark:text-white mt-[-50px] md:mt-0`}
+          className={`${styles.boxWidth} ${styles.paddingY} ${styles.padding} bg-white dark:bg-black font-poppins text-black dark:text-white mt-[-50px] md:mt-0`}
         >
           <motion.div
             initial={{ opacity: 0 }}
