@@ -1,4 +1,4 @@
-import { Navbar, Hero, CurrentMarket, School } from "../../components";
+import { Navbar, Hero, CurrentMarket, School ,CallToAction} from "../../components";
 import styles from "../../style";
 import Socials from "../../components/Socials";
 
@@ -22,6 +22,7 @@ const LandingPage = () => {
         <CurrentMarket />
         <School />
         <Socials/>
+        <CallToAction/>
         
       </div>
 

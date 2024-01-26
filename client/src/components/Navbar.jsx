@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <Link
               to={"signIn"}
-              className=" bg-blue-600  text-[17px] w-full sign2 p-1 rounded-lg flex justify-center items-center gap-2 "
+              className=" bg-blue-600 text-white text-[17px] w-full sign2 p-1 rounded-lg flex justify-center items-center gap-2 "
             >
               Sign In <i class="fa-solid fa-right-to-bracket"></i>
             </Link>

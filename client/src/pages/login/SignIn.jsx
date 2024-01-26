@@ -109,7 +109,7 @@ const SignIn = () => {
         <br />
         <div className="text-left text-[15px] ">
           Don't have an account?{" "}
-          <Link to={"/signUp"} className=" text-[blue] ">
+          <Link to={"/signUp"} className=" text-blue-600  ">
             {" "}
             Sign Up{" "}
           </Link>
