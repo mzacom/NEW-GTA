@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import { logo } from "../../assets";
 import { Link } from "react-router-dom";
 import { countries } from "../../constants";
-import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 const SignUp = () => {
-
-  
-
   // agree
   const [isChecked, setIsChecked] = useState(false);
 
@@ -25,7 +21,7 @@ const SignUp = () => {
   const [phone, setPhone] = useState("");
 
   // password correct
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -52,7 +48,7 @@ const SignUp = () => {
     }
 
     setPassword(event.target.value);
-    setEmail(e.target.value)
+    setEmail(e.target.value);
   };
 
   // confirm password
@@ -100,6 +96,34 @@ const SignUp = () => {
     if (inputValue2 === "") {
       setShowEmptyMessage2(true);
     }
+  };
+
+  // Email
+  const [inputValue7, setInputValue7] = useState("");
+  const [showEmptyMessage7, setShowEmptyMessage7] = useState(false);
+  const handleBlur7 = () => {
+    if (inputValue7 === "") {
+      setShowEmptyMessage7(true);
+    }
+  };
+
+  const handleChange7 = (e) => {
+    setInputValue7(e.target.value);
+    setShowEmptyMessage7(false);
+  };
+
+  // Username
+  const [inputValue6, setInputValue6] = useState("");
+  const [showEmptyMessage6, setShowEmptyMessage6] = useState(false);
+  const handleBlur6 = () => {
+    if (inputValue6 === "") {
+      setShowEmptyMessage6(true);
+    }
+  };
+
+  const handleChange6 = (e) => {
+    setInputValue6(e.target.value);
+    setShowEmptyMessage6(false);
   };
 
   {
@@ -157,12 +181,13 @@ const SignUp = () => {
           <p className=" text-slate-600 mb-1 text-left">First name: </p>
           <input
             type="text"
+            autoComplete="disabled"
             id="username"
             value={inputValue}
             onChange={handleChange}
             onBlur={handleBlur}
             placeholder="e.g: John"
-            className={`bg-white dark:bg-black dark:border-white  border-[1px] ${
+            className={`bg-white outline-none focus:border-[#00f] dark:bg-black dark:border-white  border-[1px] ${
               showEmptyMessage ? " border-red-600 " : "border-slate-700 "
             }  rounded-lg p-2 w-full`}
           />
@@ -179,12 +204,13 @@ const SignUp = () => {
           <p className=" text-slate-600 mb-1 text-left">Last name: </p>
           <input
             type="text"
+            autoComplete="disabled"
             id="username"
             value={inputValue2}
             onChange={handleChange2}
             onBlur={handleBlur2}
             placeholder="e.g: Huckels"
-            className={`bg-white border-[1px] dark:bg-black dark:border-white  ${
+            className={`bg-white outline-none focus:border-[#00f] border-[1px] dark:bg-black dark:border-white  ${
               showEmptyMessage2 ? " border-red-600 " : "border-slate-700 "
             }  rounded-lg p-2 w-full`}
           />
@@ -195,9 +221,55 @@ const SignUp = () => {
           )}
         </div>
 
+        {/* Email */}
+        <div className=" mt-2">
+          <label htmlFor="firstName"> </label>
+          <p className=" text-slate-600 mb-1 text-left">Email: </p>
+          <input
+            type="text"
+            id="email"
+            autoComplete="disabled"
+            value={inputValue7}
+            onChange={handleChange7}
+            onBlur={handleBlur7}
+            placeholder="e.g: myemail123@gmail.com"
+            className={`bg-white outline-none focus:border-[#00f] border-[1px] dark:bg-black dark:border-white  ${
+              showEmptyMessage7 ? " border-red-600 " : "border-slate-700 "
+            }  rounded-lg p-2 w-full`}
+          />
+          {showEmptyMessage7 && (
+            <p className=" text-[12px] empty-text text-left md:pl-0 md:ml-[5rem] mt-2 text-red-500 ">
+              field is required{" "}
+            </p>
+          )}
+        </div>
+
+        {/* username */}
+        <div className=" mt-2">
+          <label htmlFor="firstName"> </label>
+          <p className=" text-slate-600 mb-1 text-left">Username: </p>
+          <input
+            type="text"
+            id="username"
+            autoComplete="disabled"
+            value={inputValue6}
+            onChange={handleChange6}
+            onBlur={handleBlur6}
+            placeholder="e.g: johnH1921"
+            className={`bg-white outline-none focus:border-[#00f] border-[1px] dark:bg-black dark:border-white  ${
+              showEmptyMessage6 ? " border-red-600 " : "border-slate-700 "
+            }  rounded-lg p-2 w-full`}
+          />
+          {showEmptyMessage6 && (
+            <p className=" text-[12px] empty-text text-left md:pl-0 md:ml-[5rem] mt-2 text-red-500 ">
+              field is required{" "}
+            </p>
+          )}
+        </div>
+
         {/* Country */}
         <label
-          className="text-slate-600  mb-[-9px] text-left"
+          className="text-slate-600 outline-none focus:border-[#00f] mb-[-9px] text-left"
           htmlFor="countries"
         >
           Countries
@@ -214,16 +286,6 @@ const SignUp = () => {
           ))}
         </select>
 
-        {/* phone number  */}
-        <div>
-          <p className="  text-slate-600 mb-1 text-left">Phone number: </p>
-
-          <PhoneInput
-            value={phone}
-            className={` dark:bg-black dark:border-white  bg-white border-[1px] border-slate-700 rounded-lg  w-full`}
-          />
-        </div>
-
         {/* password */}
         <div className="  w-full flex-col gap-3 flex">
           <label className="text-slate-600 text-left mb-[-9px]">
@@ -233,9 +295,10 @@ const SignUp = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
+              autoComplete="disabled"
               value={password}
               onChange={handlePasswordChange}
-              className={` dark:bg-black dark:border-white bg-white border-[1px] border-slate-700 "
+              className={` outline-none focus:border-[#00f] dark:bg-black dark:border-white bg-white border-[1px] border-slate-700 "
               } rounded-lg p-2 w-full outline-none `}
             />{" "}
             <i
@@ -262,9 +325,10 @@ const SignUp = () => {
             <input
               type={showPassword2 ? "text" : "password"}
               placeholder="Confirm password"
+              autoComplete="disabled"
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
-              className={` dark:bg-black dark:border-white bg-white border-[1px] ${
+              className={` outline-none focus:border-[#00f] dark:bg-black dark:border-white bg-white border-[1px] ${
                 showEmptyMessage2 ? " border-red-600 " : "border-slate-700 "
               } rounded-lg p-2 w-full outline-none `}
             />
