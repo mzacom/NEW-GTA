@@ -59,7 +59,7 @@ const CurrentMarket = () => {
     </h1>
 
     <div className='  md:p-1 justify-center flex items-center '>
-    <h6 className=" mt-3 text-center  text-slate-500">
+    <h6 className=" mt-3 text-center sm:text-[large] md:text-[large] text-slate-500">
     The forex market is a dynamic and fast-paced global marketplace where currencies are traded, influenced by various economic factors and geopolitical events.
     </h6>
     </div>
