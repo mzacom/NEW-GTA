@@ -1,8 +1,14 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/landingPage/LandingPage";
-import SignIn from "./pages/login/SignIn";
-import SignUp from "./pages/signUp/SignUp";
+import {
+  LandingPage,
+  SignIn,
+  SignUp,
+  DashBoard,
+  Notification,
+  Window,
+  Academcy,
+} from "./pages/pages";
 
 const App = () => {
   return (
@@ -12,6 +18,10 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="signUp" element={<SignUp />} />
+          <Route path="window" element={<Window />} />
+          <Route path="notification" element={<Notification />} />
+          <Route path="dashBoard" element={<DashBoard />} />
+          <Route path="academy" element={<Academcy />} />
         </Routes>
       </BrowserRouter>
     </>

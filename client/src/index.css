@@ -191,3 +191,14 @@
 .blury2{
   backdrop-filter: blur(15px);
 }
+
+.search-icon {
+  background-image: url('../src/assets/search.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10%;
+  background-position-x: 5px;
+  background-blend-mode:overlay;
+  padding-left: 30px; /* Adjust as needed */
+ }
+ 
