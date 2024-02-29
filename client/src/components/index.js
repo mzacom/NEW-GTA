@@ -4,5 +4,7 @@ import School from "./School";
 import CurrentMarket from "./CurrentMarket";
 import CallToAction from "./CallToAction";
 import WindowNav from "./windowNav";
+import PhoneNav from "./PhoneNav";
 
-export { Navbar, Hero, School ,CurrentMarket,CallToAction, WindowNav};
+
+export { Navbar, Hero, School ,CurrentMarket,CallToAction, WindowNav,PhoneNav};

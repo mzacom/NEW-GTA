@@ -1,5 +1,5 @@
 import React from "react";
-import { WindowNav } from "../../components";
+import { WindowNav,PhoneNav } from "../../components";
 import { motion } from "framer-motion";
 
 const Notification = () => {
@@ -7,6 +7,12 @@ const Notification = () => {
     <>
       {/* side Nav */}
       <WindowNav />
+
+      <div className=" mt-[-50px] ">
+
+      <PhoneNav/>
+      </div>
+     
 
       {/* Notification */}
       <section className=" ">
@@ -19,6 +25,7 @@ const Notification = () => {
           Notification
         </motion.div>
       </section>
+   
     </>
   );
 };
