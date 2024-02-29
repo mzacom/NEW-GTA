@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const dis = () => {
-    toggle = false;
+    setToggle(false);
   };
 
   return (

@@ -6,7 +6,6 @@ import {
   SignUp,
   DashBoard,
   Notification,
-  Window,
   Academcy,
 } from "./pages/pages";
 
@@ -18,7 +17,6 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="signUp" element={<SignUp />} />
-          <Route path="window" element={<Window />} />
           <Route path="notification" element={<Notification />} />
           <Route path="dashBoard" element={<DashBoard />} />
           <Route path="academy" element={<Academcy />} />

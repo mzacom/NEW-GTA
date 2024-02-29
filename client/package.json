@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    
     "auto-prefixer": "^0.4.2",
     "axios": "^1.6.3",
     "framer-motion": "^10.16.1",

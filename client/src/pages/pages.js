@@ -12,6 +12,5 @@ export {
   SignUp,
   DashBoard,
   Notification,
- 
   Academcy,
 };
