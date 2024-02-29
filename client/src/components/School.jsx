@@ -28,16 +28,16 @@ const School = () => {
 
             <div className="  md:p-1 justify-center flex items-center ">
               <h6 className=" mt-3 text-center  text-slate-500">
-                Welcome to our Forex Academy, where we invite you to embark on
-                a journey of discovery. Navigate through the intricacies of
-                Forex trading and initiate your path to informed
-                decision-making. Let's dive in and unlock the potential of the
-                foreign exchange market together.
+                Welcome to our Forex Academy, where we invite you to embark on a
+                journey of discovery. Navigate through the intricacies of Forex
+                trading and initiate your path to informed decision-making.
+                Let's dive in and unlock the potential of the foreign exchange
+                market together.
               </h6>
             </div>
 
             <Link
-              to={"signUp"}
+              to={"dashBoard"}
               className=" h-11 p-2 w-[40%] sm:w-[30%] bg-blue-700 rounded-full sign2 flex justify-center items-center mx-auto mt-[2rem] text-white "
             >
               Get Started
